@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+  <title>Click events with pure CSS</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <h1>Click events with pure CSS</h1>
+  <main>
+    <h2>Acordeón con :target</h2>
+    <div class="acordeon"><a href="#seccion-1">Título 1</a>
+      <p id="seccion-1"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae itaque eligendi beatae sapiente nesciunt et corporis quia quidem eveniet, incidunt quas laboriosam dolorem reiciendis praesentium cum enim blanditiis cupiditate voluptatum.</p><a href="#seccion-2">Título 2</a>
+      <p id="seccion-2"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae itaque eligendi beatae sapiente nesciunt et corporis quia quidem eveniet, incidunt quas laboriosam dolorem reiciendis praesentium cum enim blanditiis cupiditate voluptatum.</p><a href="#seccion-3">Título 3</a>
+      <p id="seccion-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae itaque eligendi beatae sapiente nesciunt et corporis quia quidem eveniet, incidunt quas laboriosam dolorem reiciendis praesentium cum enim blanditiis cupiditate voluptatum.</p><a href="#seccion-4">Título 4</a>
+      <p id="seccion-4"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae itaque eligendi beatae sapiente nesciunt et corporis quia quidem eveniet, incidunt quas laboriosam dolorem reiciendis praesentium cum enim blanditiis cupiditate voluptatum.</p>
+    </div>
+    <h2>Ventana modal con :checked y radio buttons</h2>
+    <input type="radio" name="modal" id="abrir-modal"/>
+    <label for="abrir-modal">Mostrar modal</label>
+    <input type="radio" name="modal" id="cerrar-modal"/>
+    <label for="cerrar-modal">X</label>
+    <div id="modal">
+      <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolores natus, facilis. Voluptate recusandae odio, maxime quidem amet accusantium minus dolorum numquam mollitia voluptatibus nemo dolores eligendi facilis possimus quaerat?</p>
+    </div>
+    <h2>Menú offcanvas con :checked y checkbox</h2>
+    <nav id="menu">
+      <input type="checkbox" id="mostrar-menu"/>
+      <label for="mostrar-menu">Menú</label>
+      <ul>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+      </ul>
+    </nav>
+  </main>
+</body>

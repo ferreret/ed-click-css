@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+html(lang="en")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+	title Click events with pure CSS
+	link(rel="stylesheet", href="styles.css")
+body
+	h1 Click events with pure CSS
+	
+	main
+		h2 Acordeón con :target
+		.acordeon
+			- for (var i = 1; i <= 4; i++)
+				a(href="#seccion-#{i}") Título #{i}
+				p(id = "seccion-#{i}")  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae itaque eligendi beatae sapiente nesciunt et corporis quia quidem eveniet, incidunt quas laboriosam dolorem reiciendis praesentium cum enim blanditiis cupiditate voluptatum.
+		h2 Ventana modal con :checked y radio buttons
+		input(type="radio" name="modal" id="abrir-modal")
+		label(for="abrir-modal") Mostrar modal
+		input(type="radio" name="modal" id="cerrar-modal")
+		label(for="cerrar-modal") X
+		#modal
+			p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam dolores natus, facilis. Voluptate recusandae odio, maxime quidem amet accusantium minus dolorum numquam mollitia voluptatibus nemo dolores eligendi facilis possimus quaerat?
+		h2 Menú offcanvas con :checked y checkbox
+		nav#menu
+			input(type="checkbox" id="mostrar-menu")
+			label(for="mostrar-menu") Menú
+			ul
+				- for (var i = 1; i <= 5; i++)
+					li: a(href="#") Item #{i}
+
